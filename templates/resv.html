@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>KIT Booking</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}" />
+		
+		<!--페이지-->
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/skel.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+		<script src="{{ url_for('static', filename='assets/js/script_student.js')}}"></script>
+
+	</head>
+	<body>		
+		<!--메인-->
+		<div id="main" data-role="page">			
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>	
+						<a href="#realtime-timetable">실시간 강의실 조회</a>						
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+
+			
+			<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header>
+						<br />
+						<br />
+						<h2><a href="#notice">공지사항</a></h2>
+					</header>
+					<div id="datastu">
+						
+					</div>
+				</div>
+			</section>
+			<!-- Two -->
+			 <div data-role="controlgorup" data-type="horizontal" class="ui-content" >
+			 </div>
+			 <section id="two">
+				<div class="">
+					<article>
+						<div class="">
+							<a href="#reservation"><button class="button-m">예약하기</button></a>
+						</div>
+					</article>
+					<article class="">
+						<div class="">
+							<a href="#myresv"><button class="button-m">내 예약 확인</button></a>
+						</div>
+					</article>	
+				</div>
+			</section>
+		</div>		
+		 	
+		<!--공지사항-->
+		<div id="noticestu" data-role="page">
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>		
+						<a href="#realtime-timetable">실시간 강의실 조회</a>					
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+			<h2 class="header-margin-s">　 - 공지사항 </h2>
+			
+			
+			<!--컨텐츠-->
+      </div>
+      
+      <!--공지사항(세부)-->
+		<div id="noticedetail" data-role="page">
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>	
+						<a href="#realtime-timetable">실시간 강의실 조회</a>							
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+			<h2 class="header-margin-s">　 - 공지사항 </h2>
+			
+			<!--컨텐츠-->
+      </div>
+      
+      <!--예약하기-->
+		<div id="reservation" data-role="page">
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>		
+						<a href="#realtime-timetable">실시간 강의실 조회</a>					
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+			<h2 class="header-margin-s">　 - 예약하기 </h2>			
+			<ul class="date"> <input type="text" id="datepicker"> </ul>
+			<br /> <br /> <br />
+			<section>
+				<form method="post" action="#">
+					<div>
+						<ul data-role="listview" data-inset="true" class="">
+							<li class="ui-field-contain">
+								<label>사용날짜</label> <input id="todayvalue" type="date" value=""/> <!--데이트피커로 선택한 날짜 끌어옴(수정불가)-->
+ 								<label>이름</label> <input value="송지성" disabled="true"/>
+								<label>학번</label> <input id="usernumber" value="20000001" disabled="true"/>
+								<label>사용장소</label>									
+								<div class="box">
+									<div>	
+									    <select id="building">
+									      <option value="">---건물---</option>
+										  <option value="디지털관">디지털관</option>
+										  <option value="테크노관">테크노관</option>
+										  <option value="글로벌관">글로벌관</option>
+									    </select>
+									    <select id="classroom">
+									      <option value="">---호실---</option>
+										  <option value="D127">D127</option>
+										  <option value="D128">D128</option>
+										  <option value="D129">D129</option>
+										  <option value="D229">D229</option>
+									    </select>
+									  </div> 
+								</div>									
+								<label>시작시간</label> <input id="starttime" type="time" value="11:00:00"/>
+								<label>종료시간</label> <input id="finishtime" type="time" value="13:00:00"/>
+								<label>사용인원</label> <input id="usingnum" value="10명" />
+								<label>주관단체</label> <input id="usingteam" value="매크로" />
+								<label>연락처</label> <input value="010-9187-2126" disabled="true"/>
+								<label>행사설명</label> <textarea id="explainfield" name="descript" rows="5">컴퓨터공학과 과동아리 매크로의 2018-1학기 정기총회입니다.ㅡㅛ</textarea>
+							</li>
+						</ul>						 
+						<ul class="actions btn-center">
+							<li><a href="#applyresv" onclick="requestReservation();" class="button special" data-rel="dialog">예약신청</a></li>
+							<li><a href="#main" class="button">취소</a></li>
+						</ul>									
+					</div>
+				</form>
+			</section><!--컨텐츠-->
+      </div>
+      
+      <!--예약신청-->
+	  <section id="applyresv" data-role="page">
+		<header data-role="header"> <h1>예약 신청</h1> </header>
+		<div data-role="content">
+			<h4>예약 신청: </h4>
+			<p>예약 되었습니다.</p>
+			<ul class="actions btn-center">
+				<a href="#main"class="button special">OK</a>
+			</ul>				
+		</div>
+	  </section>
+	  
+	  <!--내예약-->
+		<div id="myresv" data-role="page">
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>		
+						<a href="#realtime-timetable">실시간 강의실 조회</a>					
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+			
+			<h2 class="header-margin-s">　 - 내 예약</h2>
+			<!--컨텐츠-->
+	  </div>
+      
+      <!--내예약(세부)-->
+		<div id="myresvdetail" data-role="page">
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>		
+						<a href="#realtime-timetable">실시간 강의실 조회</a>					
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+			<section>
+				<h4 class="bul-header-margin">　 - 송지성 님의 예약</h4>	
+				<form method="post" action="#">
+					<div>
+						<ul data-role="listview" data-inset="true" class="item-box-s">
+							<li class="ui-field-contain">
+								<label>이름</label> <input value="송지성" readonly/>
+								<label>학번</label> <input value="20130680" readonly/>
+								<label>사용장소</label> <input value="D229" readonly/>
+								<label>사용날짜</label> <input value="2018-04-25" readonly/>
+								<label>사용시간</label> <input value="11:00~13:00" readonly/>
+								<label>사용인원</label> <input value="10명" readonly/>
+								<label>주관단체</label> <input value="토익스터디" readonly/>
+								<label>연락처</label> <input value="010-9187-2126" readonly/>
+								<label>행사설명</label> <textarea name="descript" rows="5" readonly>컴퓨터공학과 과동아리 매크로의 2018-1학기 정기총회입니다.</textarea>
+							</li>
+						</ul>						
+						<ul class="actions btn-center">
+							<li><a href="#myresv" class="button special">확 인</a></li>
+							<li><a href="#cancelresv" class="button" data-rel="dialog">예약취소</a></li>
+						</ul>									
+					</div>
+				</form>
+			</section><!--컨텐츠-->	
+      </div>
+      <!--예약취소-->
+	  <section id="cancelresv" data-role="page">
+		<header data-role="header"> <h1>예약 취소</h1> </header>
+		<div data-role="content">
+			<h4>예약 취소: </h4>
+			<p>취소한 예약은 복구가 불가능합니다.</p>
+			<p>예약을 취소하시겠습니까?</p>
+			<ul class="actions btn-center">
+				<a href="#myresv" class="button special">OK</a>
+				<a href="#myresv" class="button">Cancel</a>
+			</ul>				
+		</div>
+	  </section>	
+	  
+	  <!--실시간강의실조회-->
+		<div id="realtime-timetable" data-role="page">
+			<header id="header">
+				<div class="inner">
+					<a href="#main" class="logo">K I T Booking</a>
+					<nav id="nav">
+						<a href="#notice">공지사항</a>
+						<div class="dropdown">
+							<a class="dropbtn">예약</a>
+							<div class="dropdown-content">
+								<a href="#reservation">예약 하기</a>
+								<a href="#myresv"> 내 예약</a>
+							</div>
+						</div>		
+						<a href="#realtime-timetable">실시간 강의실 조회</a>					
+						<div class="dropdown">
+							<a class="dropbtn">마이페이지</a>
+							<div class="dropdown-content">
+								<a href="#manageroom">내 정보</a>
+							</div>
+						</div>
+						<a href="elements.html">로그아웃</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> <!-- Header -->
+			<section>
+				<h3 class="bul-header-margin">　 - 실시간 강의실 조회</h3>
+				<h4 class="bul-header-margin-s">　 현재 빈 강의실의 리스트입니다.</h4>	
+				<div data-role="tabs" id="tabs" class="tabs">
+			    	<ul>
+				      <li><a href="#buildingD" data-ajax="false">디지털관</a></li>
+				      <li><a href="#buildingT" data-ajax="false">테크노관</a></li>
+				      <li><a href="#buildingG" data-ajax="false">글로벌관</a></li>
+			    	</ul>
+				  	<div id="buildingD" class="ui-body-d ui-content">
+				    	<h4 style="margin: 0 0 0 10%;">- 디지털관</h4>
+				  	</div>
+				  	<div id="buildingT" class="ui-body-d ui-content">
+				    	<h4 style="margin: 0 0 0 10%;">- 테크노관</h4>
+				  	</div>
+				  	<div id="buildingG" class="ui-body-d ui-content">
+				    	<h4 style="margin: 0 0 0 10%;">- 글로벌관</h4>
+				  	</div>
+				</div><!--탭-->
+				
+				<ul data-role="listview" data-inset="true" class="item-box">
+					<li>
+						<a href="#"> D127</a>
+					</li>
+					<li>
+						<a href="#"> D128</a>
+					</li>
+					<li>
+						<a href="#"> D129</a>
+					</li>
+					<li>
+						<a href="#"> D229</a>
+					</li>
+				</ul>
+			</section><!--컨텐츠-->	
+	</body>
+</html>
